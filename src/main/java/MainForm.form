@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainForm">
+  <grid id="27dc6" binding="panelMain" layout-manager="FormLayout">
+    <rowspec value="center:40px:noGrow"/>
+    <rowspec value="center:40px:noGrow"/>
+    <rowspec value="center:100px:noGrow"/>
+    <rowspec value="center:16dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:5px:noGrow"/>
+    <colspec value="fill:128px:noGrow"/>
+    <colspec value="fill:5px:noGrow"/>
+    <colspec value="fill:127px:noGrow"/>
+    <colspec value="left:45dlu:noGrow"/>
+    <colspec value="fill:89px:noGrow"/>
+    <colspec value="fill:96px:noGrow"/>
+    <constraints>
+      <xy x="20" y="20" width="647" height="222"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+    </properties>
+    <border type="none" title=""/>
+    <children>
+      <component id="6a60" class="javax.swing.JTextField" binding="textFieldShowPath">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="10" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms top="0" left="5" bottom="0" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="afd45" class="javax.swing.JButton" binding="chooseFileButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="5" bottom="0" right="5" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <focusPainted value="false"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <text value="Choose file to split"/>
+        </properties>
+      </component>
+      <component id="27bbb" class="javax.swing.JButton" binding="splitButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <forms top="5" left="5" bottom="0" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <text value="Split"/>
+        </properties>
+      </component>
+      <component id="6f278" class="javax.swing.JButton" binding="joinButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <forms top="5" left="5" bottom="0" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <focusPainted value="false"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <text value="Join"/>
+        </properties>
+      </component>
+      <grid id="1ca11" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="5" left="0" bottom="5" right="0" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <name value=""/>
+        </properties>
+        <border type="none" title="Type Split"/>
+        <children>
+          <component id="62ebd" class="javax.swing.JRadioButton" binding="radioButtonPath">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <actionCommand value="Path" noi18n="true"/>
+              <selected value="true"/>
+              <text value="Path"/>
+            </properties>
+          </component>
+          <component id="53c5e" class="javax.swing.JRadioButton" binding="radioButtonSize">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <actionCommand value="Size"/>
+              <text value="Size"/>
+            </properties>
+          </component>
+          <grid id="3ef07" binding="panelWrapTypeSplit" layout-manager="CardLayout" hgap="0" vgap="0" show="2c3cf">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="2c3cf" binding="panelChoosePath" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="CardChoosePath"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="35fff" class="javax.swing.JSpinner" binding="spinnerTotalPart" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="11283" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Total path:"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="a0f35" binding="panelChooseSize" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <card name="CardChooseSize"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="7b9b7" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Size per path:"/>
+                    </properties>
+                  </component>
+                  <component id="f98be" class="javax.swing.JSpinner" binding="spinnerSizePerPart" custom-create="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="51ec6" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="MB"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <component id="dacc0" class="javax.swing.JProgressBar" binding="progressBarComplete">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="5" bottom="0" right="5" defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <string value="0%"/>
+          <stringPainted value="true"/>
+        </properties>
+      </component>
+      <component id="7b478" class="javax.swing.JButton" binding="buttonCancel">
+        <constraints>
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms top="0" left="5" bottom="0" right="5"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroupTypeSplit">
+      <member id="53c5e"/>
+      <member id="62ebd"/>
+    </group>
+  </buttonGroups>
+</form>

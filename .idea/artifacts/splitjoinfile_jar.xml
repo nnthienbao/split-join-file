@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="splitjoinfile:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/splitjoinfile_jar</output-path>
+    <root id="archive" name="splitjoinfile.jar">
+      <element id="module-output" name="splitjoinfile" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/redist/annotations-java8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/jgoodies-forms.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
